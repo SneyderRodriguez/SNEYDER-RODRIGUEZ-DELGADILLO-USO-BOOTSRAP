@@ -6,120 +6,155 @@
     --complementario: #a65f23;
 }
 body{
-    background: var(--fondo);
+    background-color: var(--fondo);
     color: white;
-    padding-top: 70px;
+    padding-top: 75px; /* Compensa el navbar fixed */
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-h1,h2,h3,h4,h5{
-    color: var(--textotitulo);
-}
-/* ==========================
-        NAVBAR
-========================== */
+/* ======================================================
+                        NAVBAR
+====================================================== */
 .navbar{
-    background: var(--fondosecundario) !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    background-color: var(--fondosecundario) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,.35);
 }
-.navbar-brand,
+.navbar-brand{
+    color: var(--textotitulo) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 .nav-link{
     color: white !important;
+    transition: .3s;
 }
 .nav-link:hover,
-.navbar-brand:hover{
+.nav-link.active{
     color: var(--textotitulo) !important;
 }
-/* ==========================
-        HERO
-========================== */
-.card:first-child{
+/* ======================================================
+                        HERO
+====================================================== */
+main .card:first-child{
     border: none;
-    background: transparent;
+    background-color: transparent;
+    margin-bottom: 4rem !important;
 }
-.card:first-child .card-body{
-    background: var(--fondosecundario);
-    text-align: center;
+.card-img-top{
+    max-height: 500px;
+    object-fit: cover;
+}
+.card-body{
+    background-color: var(--fondosecundario);
     color: white;
+    padding: 2rem;
 }
 .card-title{
     color: var(--textotitulo);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.card-text{
+    color: var(--texto);
 }
 .btn-primary{
-    background: var(--complementario);
-    border: none;
+    background-color: var(--complementario);
+    border-color: var(--complementario);
+    padding: .7rem 1.8rem;
+    transition: .3s;
 }
 .btn-primary:hover{
-    background: var(--textotitulo);
-    color: var(--texto);
-}
-/* ==========================
-        CARDS
-========================== */
-.card{
-    border: none;
-    background: var(--fondosecundario);
-    color: white;
-}
-.card-link{
-    color: var(--textotitulo);
-    text-decoration: none;
-}
-.card-link:hover{
-    color: white;
-}
-.list-group-item{
-    background: var(--fondosecundario);
-    color: white;
-    border-color: rgba(255,255,255,.1);
-}
-/* ==========================
-        TABLAS
-========================== */
-.table{
-    --bs-table-bg: var(--fondosecundario);
-    --bs-table-color: white;
-    --bs-table-border-color: var(--complementario);
-}
-/* ==========================
-        FORMULARIOS
-========================== */
-.form-control{
-    border: 1px solid var(--complementario);
-}
-.form-control:focus{
+    background-color: var(--textotitulo);
     border-color: var(--textotitulo);
-    box-shadow: 0 0 0 .2rem rgba(206,135,87,.25);
-}
-/* ==========================
-        ACORDEÓN
-========================== */
-.accordion-button{
-    background: var(--fondosecundario);
-    color: white;
-}
-.accordion-button:not(.collapsed){
-    background: var(--complementario);
-    color: white;
-}
-.accordion-body{
-    background: white;
     color: var(--texto);
 }
-/* ==========================
-        FOOTER
-========================== */
+.container-sm{
+    background-color: var(--fondosecundario);
+    color: white;
+}
+.container-sm .col{
+    font-weight: bold;
+    color: var(--textotitulo);
+}
 
+/* ======================================================
+                    CAROUSEL
+====================================================== */
+.carousel{
+    margin: 4rem auto;
+    text-align: center;
+}
+.carousel h5{
+    color: var(--textotitulo);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.carousel small{
+    display: block;
+    color: white !important;
+    margin-top: .5rem;
+}
+.carousel-inner{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.4);
+}
+/* ======================================================
+                        FOOTER
+====================================================== */
 footer{
-    margin-top: 60px;
+    margin-top: 5rem;
 }
 
 footer .card{
-    border-radius: 0;
-    background: var(--fondosecundario);
+    background-color: var(--fondosecundario);
+    border: none;
     color: white;
 }
 
 footer .card-header{
-    color: var(--textotitulo);
+    background-color: var(--complementario);
+    color: white;
+    font-size: 1.4rem;
     font-weight: bold;
+    text-align: center;
+}
+.blockquote{
+    margin: 0;
+    text-align: center;
+}
+.blockquote-footer{
+    color: rgb(210,210,210);
+}
+/* ======================================================
+                    ACORDEÓN
+====================================================== */
+.accordion{
+    margin-top: 2rem;
+}
+.accordion-item{
+    background-color: var(--fondosecundario);
+    border-color: var(--complementario);
+}
+.accordion-button{
+    background-color: var(--fondosecundario);
+    color: white;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--complementario);
+    color: white;
+    box-shadow: none;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-body{
+    background-color: var(--fondo);
+    color: white;
+}
+.accordion-body a{
+    color: var(--textotitulo);
+    text-decoration: none;
+}
+.accordion-body a:hover{
+    text-decoration: underline;
 }
