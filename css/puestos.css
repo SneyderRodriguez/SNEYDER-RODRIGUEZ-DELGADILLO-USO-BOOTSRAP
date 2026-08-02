@@ -1,0 +1,98 @@
+#navbar-text .btn{
+    background: transparent;
+    border: 2px solid var(--grieving-daylily);
+    color: var(--ash-grey);
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    border-radius: 25px;
+    padding: .5rem 1.2rem;
+    transition: .3s;
+}
+#navbar-text .btn:hover,
+#navbar-text .btn:focus{
+    background: var(--grieving-daylily);
+    color: white;
+    border-color: var(--grieving-daylily);
+    box-shadow: none;
+}
+#navbar-text
+.dropdown-menu{
+    background: var(--sticky-black-tarmac);
+    border: 2px solid var(--grieving-daylily);
+    border-radius: 15px;
+    margin-top: .8rem;
+    overflow: hidden;
+}
+#navbar-text
+.dropdown-item{
+    color: var(--ash-grey);
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    transition: .3s;
+}
+#navbar-text
+.dropdown-item:hover{
+    background: var(--grieving-daylily);
+    color: white;
+}
+#navbar-text
+.dropdown-item:active{
+    background: var(--bitter-chocolate);
+    color: white;
+}
+#navbar-text
+.dropdown-toggle::after{
+    color: var(--ash-grey);
+    margin-left: .6rem;
+}
+#place-card{
+    background: var(--ash-grey);
+    padding: 5rem 0;
+}
+.place-card{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    transition: .35s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+.place-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.3);
+}
+.place-card .card-title{
+    font-family: var(--font-title);
+    color: var(--bitter-chocolate);
+    font-size: 2rem;
+}
+.place-card .card-text{
+    font-family: var(--font-text);
+    font-size: 1.15rem;
+    color: var(--rikyu-brown);
+}
+.place-card .list-group-item{
+    font-family: var(--font-text);
+    color: var(--sticky-black-tarmac);
+    padding: .8rem 1rem;
+}
+.place-card .card-link{
+    text-decoration: none;
+    color: var(--grieving-daylily);
+    font-family: var(--font-text);
+    transition: .3s;
+}
+.place-card .card-link:hover{
+    color: var(--bitter-chocolate);
+}
+.badge{
+    background: var(--grieving-daylily) !important;
+    color: white;
+    font-family: var(--font-span);
+    font-size: 1rem;
+    padding: .6rem 1rem;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
